@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>AÑO 2008</title>
+</head>
+
+<body>
+
+  <!-- Encabezado: logo con enlace y línea horizontal -->
+  <!--
+       En HTML5, la tabla se reemplaza por un contenedor
+       semántico (<header>). La alineación horizontal y el
+       centrado vertical ya no se fuerzan en el HTML, sino
+       que se logran aplicando CSS Flexbox (display: flex)
+       al contenedor padre
+  -->
+  <table width="100%" border="0">
+    <tr>
+      <td>
+        <a href="https://www.frro.utn.edu.ar/">
+          <img src="https://www.frro.utn.edu.ar/images/logo.png" alt="UTN-FRRO" />
+        </a>
+      </td>
+      <td valign="middle">
+        <hr />
+      </td>
+    </tr>
+  </table>
+
+  <!-- Título principal -->
+  <h1>AÑO 2008</h1>
+
+  <!-- Tabla de exámenes -->
+  <!--
+     En HTML 5 para el título convendría usar la etiqueta <caption>Exámenes</caption>.
+     Y em cuanto al diseño generala sería mejor eliminar el atributo
+     obsoleto align="center" y manejar la alineación mediante CSS (text-align).
+  -->
+  <table border="1">
+    <tr>
+      <td colspan="2" align="center"><strong>Exámenes</strong></td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        Fecha:
+        <script type="text/javascript">document.write(document.lastModified);</script>
+      </td>
+      <td align="center">Aprobados</td>
+    </tr>
+    <tr>
+      <td align="center">24/30</td>
+    </tr>
+  </table>
+
+  <!-- Lista ordenada con dos enlaces -->
+  <ol>
+    <li><a href="#enunciado">Enunciado del examen</a></li>
+    <li><a href="resolucion.html" target="_blank">Resolución</a></li>
+  </ol>
+
+  <!-- Formulario de consulta por correo electrónico -->
+  <p>Puede realizar consultas completando el siguiente formulario:</p>
+
+  <form action="mailto:x@x.com" method="post" enctype="text/plain">
+    <table border="0">
+      <tr>
+        <td>e-mail:</td>
+        <td><input type="text" name="email" id="email" /></td>
+      </tr>
+      <tr>
+        <td>consulta:</td>
+        <td><textarea name="consulta" id="consulta" rows="5" cols="30"></textarea></td>
+      </tr>
+    </table>
+    <br />
+    <input type="submit" value="ENVIAR" />
+    <input type="reset" value="BORRAR" />
+  </form>
+
+  <!-- Ancla destino del enlace "Enunciado del examen" -->
+  <a name="enunciado" id="enunciado"></a>
+  <h2>Enunciado del examen</h2>
+
+  <!-- Bloque de texto con dos párrafos -->
+  <p>
+    Ejercicio 1: ………………………………………<br />
+    …………………………………………………………
+  </p>
+  <p>
+    Ejercicio 2: ………………………………………<br />
+    …………………………………………………………
+  </p>
+
+  <p>
+    Para más información dirigirse a
+    <a href="mailto:contacto@xx.com">contacto@xx.com</a>
+  </p>
+
+</body>
+
+</html>
