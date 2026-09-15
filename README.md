@@ -1,1 +1,0 @@
-Para que la función mail() funcionara en un entorno local, se redirigió el sistema de correos de XAMPP hacia el servidor de Mailtrap. Esto se logró editando el archivo php.ini activando el sendmail interno y configurando el servidor y puerto de destino. Luego se modificó el archivo sendmail.ini ingresando las credenciales de Mailtrap para autorizar la conexión.
