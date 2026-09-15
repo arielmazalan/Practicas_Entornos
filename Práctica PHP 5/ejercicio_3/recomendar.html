@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Recomendar sitio</title>
+</head>
+<body>
+    <h1>Recomendá este sitio a un amigo</h1>
+    <form action="recomendar.php" method="post">
+        <p>
+            <label>Tu nombre:</label>
+            <input type="text" name="nombre" size="30" />
+        </p>
+        <p>
+            <label>Tu email:</label>
+            <input type="text" name="email" size="30" />
+        </p>
+        <p>
+            <label>Email de tu amigo:</label>
+            <input type="text" name="email_amigo" size="30" />
+        </p>
+        <p>
+            <label>Mensaje personal (opcional):</label><br>
+            <textarea name="mensaje" cols="40" rows="4"></textarea>
+        </p>
+        <input type="submit" value="Enviar recomendación" />
+    </form>
+</body>
+</html>
